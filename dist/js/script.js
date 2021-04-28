@@ -69,7 +69,6 @@ $(document).on('click', '.add-rule', function () {
     $(".rules .parentRule:last-child .add-rule").removeClass("disabled");
     $(".rules .parentRule .remove-rule").removeClass("disabled");
     if ($(".rules .parentRule").length < 2) {
-        console.log("Aa");
         $(".rules .parentRule .remove-rule").addClass("disabled");
     }
 });
@@ -85,7 +84,6 @@ $(document).on('click', '.remove-rule', function (e) {
         $(".rules .parentRule .remove-rule").addClass("disabled");
     }
     if ($(".rules .parentRule").length < 2) {
-        console.log("cc");
         $(".rules .parentRule .remove-rule").addClass("disabled");
     }
 });
