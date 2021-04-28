@@ -17,6 +17,12 @@ $(document).on('click', '.add-param', function () {
     j.closest(".parameters").prepend(parameter);
     j.closest(".parameters").find(".input-group.mb-2:first-child .minus-btn").removeClass("invisible");
     j.closest(".parameters").find(".input-group.mb-2:first-child .plus-btn").removeClass("invisible");
+    if ($(".rules .parentRule").length < 2) {
+        $(".rules .parentRule .add-rule").addClass("disabled");
+        $(".rules .parentRule:last-child .add-rule").removeClass("disabled");
+        $(".rules .parentRule .remove-rule").removeClass("disabled");
+        $(".rules .parentRule .remove-rule").addClass("disabled");
+    }
 });
 
 //Delete Parameter
@@ -62,6 +68,10 @@ $(document).on('click', '.add-rule', function () {
     $(".rules .parentRule .add-rule").addClass("disabled");
     $(".rules .parentRule:last-child .add-rule").removeClass("disabled");
     $(".rules .parentRule .remove-rule").removeClass("disabled");
+    if ($(".rules .parentRule").length < 2) {
+        console.log("Aa");
+        $(".rules .parentRule .remove-rule").addClass("disabled");
+    }
 });
 
 //Remove Rule
@@ -72,6 +82,10 @@ $(document).on('click', '.remove-rule', function (e) {
     $(".rules .parentRule:last-child .add-rule").removeClass("disabled");
     $(".rules .parentRule .remove-rule").removeClass("disabled");
     if ($(".rules .parentRule .remove-rule").length < 2) {
+        $(".rules .parentRule .remove-rule").addClass("disabled");
+    }
+    if ($(".rules .parentRule").length < 2) {
+        console.log("cc");
         $(".rules .parentRule .remove-rule").addClass("disabled");
     }
 });
