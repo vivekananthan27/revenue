@@ -1,0 +1,71 @@
+a{
+    text-decoration: none;
+}
+
+.modal-header{
+    border-bottom: none;
+}
+
+.modal-footer {
+    justify-content: flex-start;
+}
+
+.btn-warning, .btn-warning:focus, .btn-warning:active, .btn-warning:hover {
+    color: #fff;
+    background-color: #EC7F21;
+    border-color: #EC7F21;
+}
+
+.btn-warning:hover{
+    opacity: 0.8;
+}
+
+.input-group-text{
+    background: none;
+}
+
+.input-group .form-control{
+    border-right: none;
+}
+
+.input-group-text.blue a,
+.input-group-text.red a{
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.input-group-text.red a{
+    color: red;
+}
+
+.rule-btn{
+    border-top-right-radius: .25rem !important;
+    border-bottom-right-radius: .25rem !important;
+}
+
+.minus-btn{
+    border: none;
+}
+
+.plus-btn{
+    border: none;
+    padding-left: 0;
+}
+
+.minus-btn a, .plus-btn a, .minus-btn a:hover, .plus-btn a:hover, .minus-btn a:active, .plus-btn a:active, .minus-btn a:focus, .plus-btn a:focus {
+    border: 2px solid #848484;
+    width: 25px;
+    height: 25px;
+    color: #848484;
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 8px 0 0 0;
+    line-height: 0;
+    border-radius: 50px;
+}
+
+.disabled{
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+}

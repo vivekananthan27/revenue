@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Revenue Group</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="dist/css/library.min.css">
+        <link rel="stylesheet" href="dist/css/style.css">
+    </head>
+    <body>
+
+        <!-- Button -->
+        <div class="container pt-4">
+            <a id="revenue-m" class="btn btn-primary">Add Revenue</a>
+        </div>
+
+        <!-- Modal -->
+        <div id="m-revenue" class="modal fade" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add Revenue Group</h5>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Title -->
+                        <div class="mb-3">
+                            <label for="r-title" class="form-label">Revenue Group Title</label>
+                            <input type="text" class="form-control" id="r-title" placeholder="Enter Revenue Group Title" maxlength="50">
+                        </div>
+
+                        <!-- Dropdown 1 -->
+                        <div class="row g-3 mt-3">
+                            <div class="col-auto">
+                                <div class="form-control-plaintext">if</div>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-select">
+                                    <option value="all">All</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-control-plaintext">of the below conditions are meet</div>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 2 -->
+                        <div class="rules">
+                            <div class="row g-3 mt-3 parentRule">
+                                <div class="col-auto">
+                                    <select class="form-select">
+                                        <option value="all">aff_sub</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-auto">
+                                    <select class="form-select">
+                                        <option value="all">ls</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-8 parameters">
+                                    <!-- Parameter -->
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="insert parameter">
+                                        <span class="input-group-text blue rule-btn"><a class="add-param" href="javascript:void(0);">add rule</a></span>
+                                        <span class="input-group-text minus-btn pl-0"><a class="remove-rule disabled" href="javascript:void(0);">-</a></span>
+                                        <span class="input-group-text plus-btn pr-0"><a class="add-rule" href="javascript:void(0);">+</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Revenue -->
+                        <div class="row g-3 mt-3">
+                            <div class="col-auto">
+                                <div class="form-control-plaintext">the revenue is</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="revenue">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2">%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning">Confirm</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="dist/js/library.min.js"></script>
+        <script src="dist/js/script.js"></script>
+    </body>
+</html>
